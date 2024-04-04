@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.js",
+    "deploy": "wrangler deploy --minify src/index.js",
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript build -w"
+  },
+  "dependencies": {
+    "@alexmouton/rescript-hono": "^4.0.9",
+    "@rescript/core": "^1.2.0",
+    "hono": "^4.2.1",
+    "rescript": "^11.0.1",
+    "rescript-nodejs": "^16.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "wrangler": "^3.32.0"
+  }
+}
